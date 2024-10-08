@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Rate my kitties</h1>
+    <h2 id="kitty-title">Title here</h2>
+    <h3>Likes:
+      <span id="like-number"></span>
+    </h3>
+    <div class="container">
+      <div class="row" id="banner-container">
+        <div class="col-sm"></div>
+        <img src="images/kitty-1.jpg" 
+             id="my-banner"
+             class="col-sm">
+        <div class="col-sm"></div>
+      </div>     
+      <div class="row" id="button-container">
+        <button onclick="onPreviousButtonClicked()"
+                type="button" 
+                id="previous-button"
+                class="btn btn-warning col-sm">
+                Previous
+        </button>
+        <button onclick="onNextButtonClicked()"
+                type="button" 
+                id="next-button"
+                class="btn btn-success col-sm">
+                Next
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <script>updateKittyInfo(0)</script>
+</html>

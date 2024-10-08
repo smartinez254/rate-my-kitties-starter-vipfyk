@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "start": "servor --reload",
+    "test": "jest"
+  },
+  "dependencies": {
+    "servor": "^4.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "*",
+    "@babel/preset-env": "*",
+    "babel-jest": "*",
+    "jest": "*",
+    "jest-environment-jsdom": "^29.7.0",
+    "jquery": "*",
+    "jquery-ui": "^1.12.1"
+  },
+  "type": "module"
+}
